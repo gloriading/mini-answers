@@ -5,8 +5,10 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
-      <a class="nav-item nav-link" href="#">All Questions</a>
-      <a class="nav-item nav-link" href="#">New Question</a>
+      <%= link_to 'New Question', new_question_path,
+          class: 'nav-item nav-link' %>
+      <%= link_to 'Question List', questions_path,
+          class: 'nav-item nav-link' %>
     </div>
   </div>
 </nav>
