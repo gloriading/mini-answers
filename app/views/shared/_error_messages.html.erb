@@ -1,0 +1,12 @@
+<% if target.errors.any? %>
+  <div class="errorsBox">
+    <h4>This form has <%= pluralize(target.errors.count, "error") %>.</h4>
+    <ul>
+      <% target.errors.full_messages.each do |m| %>
+      <li>
+        <%= m %>
+      </li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
