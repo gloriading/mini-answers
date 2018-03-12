@@ -1,0 +1,15 @@
+
+
+<%= form_for @question do |f| %>
+  <%= render 'shared/error_messages', target: @question %>
+
+  <%= f.label 'Title' %>
+  <%= f.text_field :title %>
+
+  <%= f.label 'Content' %>
+  <%= f.text_area :content %>
+
+
+  <%= submit_tag "#{@question.new_record? ? 'Create' : 'Update'} Question" %>
+
+<% end %>

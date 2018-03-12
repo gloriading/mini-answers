@@ -1,0 +1,9 @@
+<div class="container">
+  <h3><%= @question.title %></h3>
+  <p>Content: <%= @question.content %></p>
+  <p><small>View Count: <%= @question.view_count %></small></p>
+  <%= link_to 'edit', edit_question_path %>
+  <%= link_to 'delete', @question,
+      method: :delete,
+      data: {confirm: 'Delete this question?'} %>
+</div>
