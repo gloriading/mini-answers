@@ -20,6 +20,8 @@ gem 'uglifier', '>= 1.3.0'
 # gem 'therubyracer', platforms: :ruby
 gem 'jquery-rails'
 gem 'bootstrap'
+gem 'faker', github: 'stympy/faker'
+gem 'cowsay', '~> 0.3.0'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'

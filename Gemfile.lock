@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/stympy/faker.git
+  revision: 679fd508c9f41f41b6df62024d67bc2281953395
+  specs:
+    faker (1.8.7)
+      i18n (>= 0.7)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -57,6 +64,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    cowsay (0.3.0)
     crass (1.0.3)
     erubi (1.7.1)
     execjs (2.7.0)
@@ -179,6 +187,8 @@ DEPENDENCIES
   bootstrap
   byebug
   coffee-rails (~> 4.2)
+  cowsay (~> 0.3.0)
+  faker!
   hirb
   jbuilder (~> 2.5)
   jquery-rails
