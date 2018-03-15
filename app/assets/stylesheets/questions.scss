@@ -1,3 +1,16 @@
 // Place all the styles related to the questions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#questionForm{
+  margin-top: 20px;
+  width: 60vw;
+  min-width: 300px;
+  .page-title {
+    font-size: 1.5em;
+    letter-spacing: 2px;
+  }
+  label {
+    letter-spacing: 1px;
+  }
+}

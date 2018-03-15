@@ -1,15 +1,20 @@
 
+<div class="container mt-4">
+  <%= form_for @question do |f| %>
+    <%= render 'shared/error_messages', target: @question %>
 
-<%= form_for @question do |f| %>
-  <%= render 'shared/error_messages', target: @question %>
+    <div class="form-group">
+      <%= f.label 'title' %>
+      <%= f.text_field :title, class: 'form-control' %>
+    </div>
 
-  <%= f.label 'Title' %>
-  <%= f.text_field :title %>
+    <div class="form-group">
+      <%= f.label 'content' %>
+      <%= f.text_area :content, class: 'form-control' %>
+    </div>
 
-  <%= f.label 'Content' %>
-  <%= f.text_area :content %>
+    <%= submit_tag "#{@question.new_record? ? 'Create' : 'Update'} Question", class: 'btn btn-secondary' %>
 
+  <% end %>
 
-  <%= submit_tag "#{@question.new_record? ? 'Create' : 'Update'} Question" %>
-
-<% end %>
+</div>
