@@ -4,6 +4,10 @@
     <p class="lead">
       This is an app for users to ask questions and provide answers.
     </p>
-    <%= link_to "Sign up now", new_user_path, class: "btn btn-light" %>
+    <% if user_signed_in? %>
+      
+    <% else %>
+      <%= link_to "Sign up now", new_user_path, class: "btn btn-light" %>
+    <% end %>
   </div>
 </div>
