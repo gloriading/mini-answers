@@ -3,7 +3,8 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #questionForm {
-  margin-top: 20px;
+  margin: 20px auto;
+  margin-bottom: 0;
   width: 60vw;
   min-width: 300px;
   .page-title {
@@ -15,10 +16,21 @@
   }
 }
 
-#questionShowCard {
+#questionShowCard,#questionIndex {
   margin: 0 auto;
   width: 80vw;
   min-width: 400px;
   padding: 20px 30px;
   border-left: 3px solid black;
+}
+
+#questionIndex {
+  border: 0;
+}
+.question-index-item {
+  font-size: 1.2em;
+  padding-left: 10px;
+  &:hover {
+    border-left: 5px solid hotpink;
+  }
 }
