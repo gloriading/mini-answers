@@ -30,7 +30,17 @@
 .question-index-item {
   font-size: 1.2em;
   padding-left: 10px;
+  border-bottom: 1px dashed gray;
+  span {
+    font-size: 0.8em;
+    margin-left: 20px;
+    letter-spacing: 1px;
+    display: none;
+  }
   &:hover {
     border-left: 5px solid hotpink;
+    letter-spacing: 2px;
   }
+  &:hover span { display: inline-block; }
+  a:visited { color: deeppink; }
 }
