@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#questionForm{
+#questionForm {
   margin-top: 20px;
   width: 60vw;
   min-width: 300px;
@@ -13,4 +13,12 @@
   label {
     letter-spacing: 1px;
   }
+}
+
+#questionShowCard {
+  margin: 0 auto;
+  width: 80vw;
+  min-width: 400px;
+  padding: 20px 30px;
+  border-left: 3px solid black;
 }
