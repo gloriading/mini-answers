@@ -3,14 +3,11 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #questionForm {
+  border-left: 3px solid black;
   margin: 20px auto;
   margin-bottom: 0;
   width: 60vw;
   min-width: 300px;
-  .page-title {
-    font-size: 1.5em;
-    letter-spacing: 2px;
-  }
   label {
     letter-spacing: 1px;
   }
