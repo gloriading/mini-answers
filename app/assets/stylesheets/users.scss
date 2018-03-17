@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#signUpForm, #logInForm {
+#signUpForm, #logInForm, #userEditForm {
   border-left: 3px solid black;
   margin: 20px auto;
   margin-bottom: 0;
@@ -16,4 +16,12 @@
     margin-top: 5px;
     font-size: 0.8em;
   }
+}
+.user_info {
+  border-left: 3px black solid;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  margin: 20px;
+  padding: 10px 20px;
+  background-color: rgba(244, 164, 96, 0.7)
 }
