@@ -23,13 +23,41 @@
  a {
    text-decoration: none !important;
  }
+
+ nav.navbar {
+   background-color: #303F9F !important;
+   a {
+     color: #FFFFFF !important;
+   }
+   a.navbar-brand {
+     &:hover { letter-spacing: 2px; }
+   }
+   .navbar-nav a {
+     &:hover {
+       box-shadow: 0 0 0 5px #3F51B5 inset;
+     }
+   }
+ }
+
+nav .dropdown-menu {
+   background-color: #303F9F !important;
+   a {
+     color: #FFFFFF !important;
+     &:hover {
+       background-color: #3F51B5;
+     }
+   }
+ }
+
  .container-fluid {
    padding: 0 !important;
  }
+
 .btn {
   outline: none !important;
   letter-spacing: 1.5px;
 }
+
 .errorsBox {
   background-color: rgba(106, 90, 205, 0.6);
   border-left: 3px solid rgb(75, 0, 130);
