@@ -1,11 +1,11 @@
-<div class="jumbotron jumbotron-fluid" id="homeContainer">
+<div id="homeContainer">
   <div class="container">
     <h1 class="display-4">Mini Answers</h1>
     <p class="lead">
       This is an app for users to ask questions and provide answers.
     </p>
     <% if user_signed_in? %>
-      
+
     <% else %>
       <%= link_to "Sign up now", new_user_path, class: "btn btn-light" %>
     <% end %>

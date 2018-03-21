@@ -2,7 +2,13 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-#homeContainer {
-  width: 100%;
-  background-color: chocolate;
+div#homeContainer {
+  height:100vh;
+  background-color: #3F51B5;
+  padding: 5rem 10rem;
+  color: #FFFFFF;
+  .lead {
+    color: #C5CAE9;
+    letter-spacing: 1px;
+  }
 }
