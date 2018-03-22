@@ -1,6 +1,6 @@
 <% if target.errors.any? %>
   <div class="errorsBox">
-    <h5>This form has <strong><%= pluralize(target.errors.count, "error") %></strong>.</h5>
+    <h5>Oops.This form has <strong><%= pluralize(target.errors.count, "error") %></strong>.</h5>
     <ul>
       <% target.errors.full_messages.each do |m| %>
       <li>

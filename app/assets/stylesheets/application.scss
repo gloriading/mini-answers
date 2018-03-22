@@ -20,6 +20,10 @@
    font-size: 18px;
  }
 
+div#mainContainer {
+   background-color: #3F51B5;
+}
+
  a {
    text-decoration: none !important;
  }
@@ -59,10 +63,17 @@ nav .dropdown-menu {
 }
 
 .errorsBox {
-  background-color: rgba(106, 90, 205, 0.6);
-  border-left: 3px solid rgb(75, 0, 130);
+  background-color: rgba(159,168,218,0.6);
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  letter-spacing: 1px;
   padding: 10px;
   margin-bottom: 10px;
-  color: rgb(75, 0, 130);
+  color: black;
+}
+
+div.alert {
+  margin: 0;
+  z-index: 9999;
+  letter-spacing: 1px;
 }
  @import 'bootstrap';
