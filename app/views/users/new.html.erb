@@ -1,24 +1,26 @@
 <% provide(:title, 'sign up') %>
+<div class="signUpFormContainer">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3" id="signUpForm">
 
-<div class="row">
-  <div class="col-md-6 col-md-offset-3" id="signUpForm">
-    
-    <%= form_for @user do |f| %>
-    <%= render 'shared/error_messages', target: @user %>
+      <%= form_for @user do |f| %>
+      <%= render 'shared/error_messages', target: @user %>
 
-      <%= f.label :name %>
-      <%= f.text_field :name, class: 'form-control'  %>
+        <%= f.label :name %>
+        <%= f.text_field :name, class: 'form-control'  %>
 
-      <%= f.label :email %>
-      <%= f.email_field :email, class: 'form-control'  %>
+        <%= f.label :email %>
+        <%= f.email_field :email, class: 'form-control'  %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password, class: 'form-control'  %>
+        <%= f.label :password %>
+        <%= f.password_field :password, class: 'form-control'  %>
 
-      <%= f.label :password_confirmation, "Confirmation" %>
-      <%= f.password_field :password_confirmation, class: 'form-control'  %>
+        <%= f.label :password_confirmation, "Confirmation" %>
+        <%= f.password_field :password_confirmation, class: 'form-control'  %>
 
-      <%= f.submit "Sign up", class: "btn btn-primary mt-2" %>
-    <% end %>
+        <%= f.submit "Sign up", class: "btn btn-primary btn-sm mt-2 signUpBtn" %>
+      <% end %>
+    </div>
   </div>
+
 </div>

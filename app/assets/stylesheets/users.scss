@@ -1,15 +1,21 @@
 // Place all the styles related to the users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+div.signUpFormContainer {
+  height:100vh;
+  padding: 5rem 10rem;
+  color: #FFFFFF;
+}
 
 #signUpForm, #logInForm, #userEditForm {
-  border-left: 3px solid black;
+  border-left: 3px solid #1a237e;
   margin: 20px auto;
   margin-bottom: 0;
   width: 60vw;
   min-width: 300px;
   label {
     letter-spacing: 1px;
+    margin-top: 5px;
   }
   .newUserLink {
     letter-spacing: 1px;
@@ -20,7 +26,8 @@
       &:hover { color: #1a237e; }
     }
   }
-  .logInBtn {
+  .logInBtn, .signUpBtn {
+    letter-spacing: 2px;
     background-color: #1a237e;
     border: 0;
     &:hover { box-shadow: 2px 2px 5px #5c6bc0;}
