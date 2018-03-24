@@ -1,12 +1,16 @@
-<div class="container">
+<div class="container" id="questionShowContainer">
   <div id="questionShowCard">
     <h3><%= @question.title %></h3>
-    <p><%= @question.content %></p>
+    <p class="content"><%= @question.content %></p>
     <p><small>View Count: <%= @question.view_count %></small></p>
-    <%= link_to 'edit', edit_question_path, class: 'btn btn-info' %>
+    <div class="dateInfo">
+      <span class="badge badge-success">Created: <%= @question.created_at.strftime('%d %b %Y %l:%M %p') %></span>
+      <span class="badge badge-info">Updated: <%= @question.updated_at.strftime('%d %b %Y %l:%M %p') %></span>
+    </div>
+    <%= link_to 'edit', edit_question_path, class: 'btn btn-info btn-sm' %>
     <%= link_to 'delete', @question,
     method: :delete,
     data: {confirm: 'Delete this question?'},
-    class: 'btn btn-danger' %>
+    class: 'btn btn-danger btn-sm ml-2' %>
   </div>
 </div>

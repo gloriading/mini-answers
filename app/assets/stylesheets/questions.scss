@@ -29,7 +29,25 @@
   width: 80vw;
   min-width: 400px;
   padding: 20px 30px;
-  border-left: 3px solid black;
+  border-left: 3px solid #1a237e;
+}
+
+#questionShowContainer {
+  height:100vh;
+  padding: 3rem;
+  color: #b3e5fc;
+  h3 { text-shadow: 1px 1px 2px black; }
+  .content {
+    font-size: 1.2rem;
+    color: white;
+  }
+  .btn {
+    width: 100px;
+  }
+  .dateInfo {
+    padding: 10px 0px;
+    span:first-of-type { margin-right: 10px; }
+  }
 }
 
 #questionIndex {
