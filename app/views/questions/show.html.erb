@@ -1,8 +1,11 @@
 <div class="container" id="questionShowContainer">
   <div id="questionShowCard">
-    <h3><%= @question.title %></h3>
+    <h3>
+      <%= @question.title %>
+      <span class="viewCount"><small>view: <%= @question.view_count %></small></span>
+    </h3>
     <p class="content"><%= @question.content %></p>
-    <p><small>View Count: <%= @question.view_count %></small></p>
+
     <div class="dateInfo">
       <span class="badge badge-success">Created: <%= @question.created_at.strftime('%d %b %Y %l:%M %p') %></span>
       <span class="badge badge-info">Updated: <%= @question.updated_at.strftime('%d %b %Y %l:%M %p') %></span>
