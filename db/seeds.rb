@@ -1,8 +1,8 @@
 
 20.times do
   Question.create(
-    title: Faker::Book.title,
-    content: Faker::Lorem.paragraph,
+    title: Faker::Cat.name,
+    content: Faker::HitchhikersGuideToTheGalaxy.quote,
     view_count: rand(1..10)
   )
 end
