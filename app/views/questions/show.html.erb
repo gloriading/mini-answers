@@ -16,4 +16,11 @@
     data: {confirm: 'Delete this question?'},
     class: 'btn btn-danger btn-sm ml-2' %>
   </div>
+  <div id="answerShowCard">
+    <% @answers.each do |answer| %>
+    <div class="answerBlock">
+      <p> <%= answer.body %> </p>
+      <p> <%= answer.created_at.strftime('%d %b %Y %l:%M %p') %> </p>
+    <% end %>
+  </div>
 </div>
