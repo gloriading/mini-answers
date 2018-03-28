@@ -58,6 +58,7 @@ nav .dropdown-menu {
  }
 
 .btn {
+  border: none !important;
   outline: none !important;
   letter-spacing: 1.5px;
 }
@@ -76,4 +77,19 @@ div.alert {
   z-index: 9999;
   letter-spacing: 1px;
 }
+
+a.btn-info {
+  background-color: RGB(65, 105, 225) !important;
+  &:hover {
+    background-color: RGBA(65, 105, 225, 0.6) !important;
+  }
+}
+
+a.btn-danger {
+  background-color: RGB(205, 92, 92) !important;
+  &:hover {
+    background-color: RGBA(205, 92, 92, 0.6) !important;
+  }
+}
+
  @import 'bootstrap';
