@@ -2,6 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#answerForm {
+  border: 3px white solid;
+  padding: 10px 30px;
+  .answerFormLabel {
+    text-transform: uppercase;
+    color: white;
+  }
+}
+
 #answerShowCard {
   border-top: 3px navy solid;
   padding: 10px 20px;

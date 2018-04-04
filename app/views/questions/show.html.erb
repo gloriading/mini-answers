@@ -10,7 +10,7 @@
       <span class="badge badge-success">Created: <%= @question.created_at.strftime('%d %b %Y %l:%M %p') %></span>
       <span class="badge badge-info">Updated: <%= @question.updated_at.strftime('%d %b %Y %l:%M %p') %></span>
     </div>
-    <%= link_to 'edit', edit_question_path, class: 'btn btn-info btn-sm' %>
+    <%= link_to 'edit', edit_question_path(@question), class: 'btn btn-info btn-sm' %>
     <%= link_to 'delete', @question,
     method: :delete,
     data: {confirm: 'Delete this question?'},
@@ -22,7 +22,7 @@
       <%= render 'shared/error_messages', target: @answer %>
 
     <div class="form-group">
-      <%= f.label 'your answer' %>
+      <%= f.label 'give an answer', class: 'answerFormLabel' %>
       <%= f.text_area :body, class: 'form-control' %>
     </div>
 
