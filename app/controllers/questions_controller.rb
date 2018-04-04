@@ -19,6 +19,7 @@ class QuestionsController < ApplicationController
   def show
     @question.update(view_count: @question.view_count + 1)
     @answers = @question.answers.order(created_at: :desc)
+    @answer = Answer.new
   end
 
   def index
