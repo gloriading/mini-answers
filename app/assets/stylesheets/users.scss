@@ -34,11 +34,20 @@ div.signUpFormContainer {
     &:active { box-shadow: -2px -2px 5px #5c6bc0;}
   }
 }
+
+.userShowContainer {
+  min-height:100vh;
+}
+
 .user_info {
-  border-left: 3px black solid;
+  // border-left: 3px black solid;
   border-top-right-radius: 100px;
   border-bottom-right-radius: 100px;
   margin: 20px;
   padding: 10px 20px;
-  background-color: rgba(244, 164, 96, 0.7)
+  background-color: rgba(244, 164, 96, 0.8)
+}
+
+.user_info:hover {
+
 }
