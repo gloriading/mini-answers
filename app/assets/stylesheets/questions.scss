@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
  div.questionContainer {
-  height:100vh;
+  min-height:100vh;
   padding: 5rem 10rem;
   color: #FFFFFF;
 }
@@ -33,7 +33,7 @@
 }
 
 #questionShowContainer {
-  height:100vh;
+  min-height:100vh;
   padding: 3rem;
   color: #b3e5fc;
   h3 {
