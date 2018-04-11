@@ -10,7 +10,7 @@
 
     <div class="form-group">
       <%= f.label 'content' %>
-      <%= f.text_area :content, class: 'form-control' %>
+      <%= f.text_area :content, rows: 5, class: 'form-control' %>
     </div>
 
     <%= submit_tag "#{@question.new_record? ? 'Create' : 'Update'} Question", class: 'btn btn-secondary btn-sm questionBtn' %>

@@ -20,8 +20,8 @@
     border: 0;
     &:hover { box-shadow: 2px 2px 5px #5c6bc0;}
     &:active { box-shadow: -2px -2px 5px #5c6bc0;}
-
   }
+  textarea { resize: none; }
 }
 
 #questionShowCard,#questionIndex {
