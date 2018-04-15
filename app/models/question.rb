@@ -1,6 +1,7 @@
 class Question < ApplicationRecord
+  belongs_to :user
   has_many :answers, dependent: :destroy
-  validates :title, presence: true, length: { in: 5..20 }
+  validates :title, presence: true, uniqueness: true, length: { in: 5..20 }
   validates :content, presence: true, length: { in: 5..500 }
   validates :view_count, numericality: { greater_than_or_equal_to: 0 }
 
