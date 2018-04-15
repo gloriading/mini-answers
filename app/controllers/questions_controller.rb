@@ -1,6 +1,7 @@
 class QuestionsController < ApplicationController
   before_action :authenticate_user!, except: [:show, :index]
   before_action :find_question, only: [:show, :edit, :update, :destroy]
+  before_action :authorize_user!, only: [:edit, :update, :destroy]
 
   def new
     @question = Question.new
@@ -8,6 +9,7 @@ class QuestionsController < ApplicationController
 
   def create
     @question = Question.new question_params
+    @question.user = current_user
     if @question.save
       flash[:success] = 'Thank you for creating a question.'
       redirect_to @question
@@ -41,10 +43,10 @@ class QuestionsController < ApplicationController
 
   def destroy
     if @question.destroy
-      flash[success] = 'Your question has been deleted.'
+      flash[:success] = 'Your question has been deleted.'
       redirect_to questions_path
     else
-      flash.now[:warning] = 'Delete failed.'
+      flash.now[:danger] = 'Delete failed.'
       render @question
     end
 
@@ -60,4 +62,10 @@ class QuestionsController < ApplicationController
     @question = Question.find params[:id]
   end
 
+  def authorize_user!
+    unless can?(:crud, @question)
+      flash[:danger] = 'Access Denied!'
+      redirect_to home_path
+    end
+  end
 end
