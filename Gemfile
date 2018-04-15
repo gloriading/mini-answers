@@ -22,6 +22,7 @@ gem 'jquery-rails'
 gem 'bootstrap'
 gem 'faker', github: 'stympy/faker'
 gem 'cowsay', '~> 0.3.0'
+gem 'cancancan'
 
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
