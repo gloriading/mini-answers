@@ -1,7 +1,7 @@
 <div class="container questionIndexContainer">
   <div id="questionIndex">
     <% @questions.each do |question| %>
-      <%= link_to question.title, question, class: "question-index-item" %>
+      <p>✸ <%= link_to question.title, question, class: "question-index-item" %></p>
     <% end %>
   </div>
 </div>
