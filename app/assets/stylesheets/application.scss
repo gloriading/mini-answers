@@ -34,12 +34,17 @@ div#mainContainer {
      color: #FFFFFF !important;
    }
    a.navbar-brand {
+     transition: 1s ease;
      &:hover { letter-spacing: 2px; }
    }
    .navbar-nav a {
      &:hover {
        box-shadow: 0 0 0 5px #3F51B5 inset;
      }
+   }
+   button.navbar-toggler {
+     outline: none;
+     span.navbar-toggler-icon { color: whitesmoke !important; }
    }
  }
 
@@ -72,11 +77,21 @@ nav .dropdown-menu {
   color: black;
 }
 
-div.alert {
-  margin: 0;
+.alert {
+  width: 80%;
+  margin: auto;
+  border-radius: 0px !important;
+  border: none !important;
   z-index: 9999;
+  color: black !important;
+  font-size: 18px;
   letter-spacing: 1px;
+  font-weight: bold;
 }
+div.alert-info { background-color: rgba(29, 123, 185, 0.8) !important; }
+div.alert-success { background-color: rgba(60, 179, 113, 0.8) !important; }
+div.alert-danger { background-color: rgba(255, 105, 180, 0.8) !important; }
+
 
 a.btn-info {
   background-color: RGB(65, 105, 225) !important;
